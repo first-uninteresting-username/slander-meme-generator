@@ -21,6 +21,7 @@
 
 	let isRendering = false;
 	let isError = false;
+	let errorMessage = '';
 	let percent = 0;
 	let remainingRenderingTime = 0;
 
@@ -66,6 +67,7 @@
 			$videoSrc = await renderer.render($scenes, $filmSettings, $musicSettings);
 		} catch (err) {
 			isError = true;
+			errorMessage = err instanceof Error ? err.message : String(err);
 		}
 		isRendering = false;
 	}
@@ -86,6 +88,7 @@
 			<div class="marg">Remaining time: {msToTime(remainingRenderingTime)}</div>
 		{:else if isError}
 			<div class="marg">An error occurred while rendering your video</div>
+			{#if errorMessage}<pre class="marg error-log">{errorMessage}</pre>{/if}
 			<Button class="marg" on:click={render}>Try agin</Button>
 		{:else if $videoSrc === ''}
 			<Button on:click={render}>Start rendering</Button>
@@ -102,6 +105,12 @@
 </div>
 
 <style>
+	.error-log {
+		max-height: 12rem;
+		overflow: auto;
+		white-space: pre-wrap;
+		font-size: 0.75rem;
+	}
 	.render-the-video {
 		width: 100%;
 		height: 100%;

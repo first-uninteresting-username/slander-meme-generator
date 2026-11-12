@@ -16,7 +16,23 @@ export const PREUPLOADED_VIDEO_FILES = [
 	'Cristiano Ronaldo Drinking', // https://youtu.be/uqlAzC127o8
 	'American Psycho Walking', // https://youtu.be/87KBtb1Ayhc
 	'Nileseyy Niles Disappears', // https://youtu.be/KiD4G202nV4
-	'Femboys' // https://youtu.be/UP8cQ5mxjgg
+	'Femboys', // https://youtu.be/UP8cQ5mxjgg
+	'Bully Maguire Dance', // https://youtu.be/wm-FA-JCdiU
+	'Thomas Shelby Walking', // https://youtu.be/LZytul2HsqI
+	'The Rock Eyebrow Raise', // https://youtu.be/0mWGFNZxgko
+	'John Cena Are You Sure About That', // https://youtu.be/KdotGNlr9Os (first 9 s)
+	'Mr Krabs Confused', // https://youtu.be/dKZPRuf2AA0
+	'Coffin Dance', // https://youtu.be/OufgYA5KX6o
+	'Sad Pablo Escobar', // https://youtu.be/ArMBaiw0uBM
+	'Megamind No Bitches', // https://youtu.be/JGv_Tv0kFMY
+	'Darth Vader Noooo', // https://youtu.be/nIAYtHiCjN8
+	'North Korean Crowd Clapping', // https://youtu.be/Sw0Q9OldjPs
+	'Ryan Gosling Drive', // https://youtu.be/lrPswTuRAsE
+	'Joker Stairs Dance', // https://youtu.be/8ewCFn6QC_Q
+	'Office Computer Rage', // https://youtu.be/QEXGPhEVGXo
+	'Wolf Of Wall Street Chest Thump', // https://youtu.be/XYVXOky-j5g
+	'IShowSpeed Barking', // https://youtu.be/NM5J_comS1o
+	'Mr Incredible Becoming Uncanny' // https://youtu.be/28IRaMc1AiU
 ] as const;
 
 export type PreuploadedVideoFilesType = typeof PREUPLOADED_VIDEO_FILES[number];
