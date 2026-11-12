@@ -115,7 +115,7 @@ export class Renderer {
 				`(h-text_h) - ${bottomTextSettings.fontSize / 2}`
 			)}
 			${textFilter(`top${index}.txt`, topTextSettings, `${topTextSettings.fontSize / 2}`)}
-			drawtext=fontfile=impact.ttf:text='gojodzojo.github.io/slander-meme-generator':fontsize=10 * (${
+			drawtext=fontfile=impact.ttf:text='first-uninteresting-username.github.io/slander-meme-generator':fontsize=10 * (${
 				filmSettings.filmHeight
 			} / 480):fontcolor=black:box=1:boxcolor=white@0.5:boxborderw=2:x=w-text_w - 2:y=h-text_h - 2,
 			trim=${startTime}:${endTime},

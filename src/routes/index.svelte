@@ -10,7 +10,6 @@
 	import DownloadTheVideo from '../components/DownloadTheVideo/DownloadTheVideo.svelte';
 	import { Renderer } from '../scripts/renderer';
 	import githubIconSrc from '../icons/logo--github.svg?url';
-	import coffeeIconSrc from '../icons/cafe.svg?url';
 
 	let renderer = new Renderer();
 	let isRendererLoaded = false;
@@ -44,12 +43,8 @@
 	<div class="header">
 		<div class="title">Slander meme generator</div>
 
-		<a href="https://github.com/Gojodzojo/slander-meme-generator">
+		<a href="https://github.com/first-uninteresting-username/slander-meme-generator">
 			<img src={githubIconSrc} alt="Github logo" />
-		</a>
-
-		<a href="https://www.buymeacoffee.com/mateuszgoik">
-			<img src={coffeeIconSrc} alt="Cafe icon" />
 		</a>
 	</div>
 

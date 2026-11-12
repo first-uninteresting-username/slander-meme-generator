@@ -41,21 +41,11 @@
 		<br />
 
 		<p>You have successfully generated your slander meme video.</p>
-		<p>Click the first button to download it.</p>
-		<br />
-
-		<p>If you found this app usefull you can support me by clicking the second button.</p>
+		<p>Click the button below to download it.</p>
 		<br />
 
 		<div class="action-btns">
 			<Button href={$videoSrc} download={outputFileName}>Download the video</Button>
-			<Button
-				href="https://www.buymeacoffee.com/mateuszgoik"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				Buy me a coffee
-			</Button>
 		</div>
 	</Tile>
 	<div class="step-buttons">
